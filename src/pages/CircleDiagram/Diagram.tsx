@@ -35,7 +35,7 @@ const Diagram = () => {
                 {processSteps.map(({ step, description }, index) => (
                     <div
                         key={step}
-                        className="flex max-h-fit min-h-48 flex-col items-center border bg-blue-950 p-8"
+                        className="flex max-h-fit min-h-48 flex-col items-center border bg-blue-950 rounded-xl p-8"
                         onMouseEnter={() => setHoveredStep(index)} // Set the hovered step index
                         onMouseLeave={() => setHoveredStep(null)} // Reset when not hovered
                     >
