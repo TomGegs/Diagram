@@ -35,17 +35,17 @@ const Diagram = () => {
                 {processSteps.map(({ step, description }, index) => (
                     <div
                         key={step}
-                        className="flex max-h-fit min-h-48 flex-col items-center border bg-blue-950 rounded-xl p-8"
+                        className="from-[#1F408E] to-[#04143C] flex max-h-fit min-h-48 flex-col items-center gap-2 rounded-xl border bg-gradient-to-br from-50% to-100% p-8"
                         onMouseEnter={() => setHoveredStep(index)} // Set the hovered step index
                         onMouseLeave={() => setHoveredStep(null)} // Reset when not hovered
                     >
                         <div className=""></div>
-                        <p className="text-2xl font-semibold text-orange-500  ">
+                        <p className="text-left text-2xl font-semibold text-white  ">
                             {step}
                         </p>
                         {/* Show the description only for the hovered step */}
                         <p
-                            className={` flex max-w-sm text-center font-thin text-white transition-all duration-500 ${hoveredStep === index ? 'opacity-100' : 'opacity-50'} `}
+                            className={` flex max-w-sm text-left font-thin text-white transition-all duration-500 ${hoveredStep === index ? 'opacity-100' : 'opacity-50'} `}
                         >
                             {description}
                         </p>
