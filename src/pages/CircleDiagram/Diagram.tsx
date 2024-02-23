@@ -30,7 +30,7 @@ const Diagram = () => {
     const [hoveredStep, setHoveredStep] = useState<null | number>(null);
 
     return (
-        <div className="flex h-full w-full">
+        <div className="flex h-fit w-full">
             <div className="flex w-full flex-row justify-evenly bg-black">
                 {processSteps.map(({ step, description }, index) => (
                     <div
