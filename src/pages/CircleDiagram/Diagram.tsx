@@ -42,7 +42,11 @@ const Diagram = () => {
                         <div className="rounded-full bg-white p-8" />
                         <span>{step}</span>
                         {/* Show the description only for the hovered step */}
-                        {hoveredStep === index ? <p>{description}</p> : null}
+                        <p
+                            className={` transition-all duration-500 ${hoveredStep === index ? 'opacity-100' : 'opacity-0'} `}
+                        >
+                            {description}
+                        </p>
                     </div>
                 ))}
             </div>
